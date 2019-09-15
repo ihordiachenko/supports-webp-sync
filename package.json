@@ -1,0 +1,28 @@
+{
+  "name": "supports-webp-sync",
+  "version": "0.0.0",
+  "description": "Checks if the browser supports WebP. Cheaply and synchronously.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ihordiachenko/supports-webp-sync.git"
+  },
+  "keywords": [
+    "webp",
+    "image",
+    "browser",
+    "compability",
+    "support",
+    "detect",
+    "detection"
+  ],
+  "author": "Ihor Diachenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ihordiachenko/supports-webp-sync/issues"
+  },
+  "homepage": "https://github.com/ihordiachenko/supports-webp-sync#readme"
+}
