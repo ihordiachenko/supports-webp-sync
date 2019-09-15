@@ -4,6 +4,12 @@ Checks if the browser supports WebP without any costly requests.
 
 May give false negatives for some obscure non-WebKit browsers.
 
+## Install
+
+```bash
+npm i -S supports-webp-sync
+```
+
 ## Usage
 
 ```js
