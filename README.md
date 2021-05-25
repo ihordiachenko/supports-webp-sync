@@ -1,6 +1,6 @@
 # supports-webp-sync
 
-[![npm](https://img.shields.io/npm/v/supports-webp-sync.svg)](https://www.npmjs.com/package/supports-webp-sync) [![npm](https://img.shields.io/bundlephobia/minzip/supports-webp-sync)](https://www.npmjs.com/package/eslint-plugin-chai-friendly)
+[![npm](https://img.shields.io/npm/v/supports-webp-sync.svg)](https://www.npmjs.com/package/supports-webp-sync) [![npm](https://img.shields.io/bundlephobia/minzip/supports-webp-sync)](https://www.npmjs.com/package/supports-webp-sync)
 
 
 
