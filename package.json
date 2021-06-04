@@ -1,6 +1,6 @@
 {
   "name": "supports-webp-sync",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Checks if the browser supports WebP. Cheaply and synchronously.",
   "main": "index.js",
   "scripts": {
