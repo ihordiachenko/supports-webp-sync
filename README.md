@@ -8,6 +8,8 @@ Checks if the browser supports WebP without any costly requests.
 
 May give false negatives for some obscure non-WebKit browsers.
 
+Live check: https://ihordiachenko.github.io/supports-webp-sync/
+
 ## Install
 
 ```bash
