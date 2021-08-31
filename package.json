@@ -1,12 +1,14 @@
 {
   "name": "supports-webp-sync",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Checks if the browser supports WebP. Cheaply and synchronously.",
   "main": "index.js",
   "module": "lib/index.js",
   "browser": "lib/index.js",
   "types": "lib/index.d.ts",
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:cjs": "tsc index.ts --declaration --outDir lib",
