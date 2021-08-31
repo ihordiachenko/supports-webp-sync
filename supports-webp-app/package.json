@@ -2,8 +2,9 @@
   "name": "supports-webp-app",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "npm run build-lib && vite",
+    "build-lib": "cd .. && npm run build && cd supports-webp-app",
+    "build": "npm run build-lib && vite build",
     "serve": "vite preview"
   },
   "dependencies": {

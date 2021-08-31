@@ -3,9 +3,15 @@
   "version": "1.0.2",
   "description": "Checks if the browser supports WebP. Cheaply and synchronously.",
   "main": "index.js",
-  "files": ["index.js"],
+  "module": "lib/index.js",
+  "browser": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": ["lib"],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:cjs": "tsc index.ts --declaration --outDir lib",
+    "build:esm": "tsc index.ts --target es6 --declaration --outDir lib",
+    "build": "npm run build:esm && mv lib/index.js lib/index.esm.js && npm run build:cjs"
   },
   "repository": {
     "type": "git",
@@ -25,5 +31,8 @@
   "bugs": {
     "url": "https://github.com/ihordiachenko/supports-webp-sync/issues"
   },
-  "homepage": "https://github.com/ihordiachenko/supports-webp-sync#readme"
+  "homepage": "https://github.com/ihordiachenko/supports-webp-sync#readme",
+  "devDependencies": {
+    "typescript": "^4.4.2"
+  }
 }

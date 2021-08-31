@@ -1,4 +1,4 @@
-export function checkWebPSupport () {
+export function  checkWebPSupport(): Boolean  {
     // Use canvas hack for webkit-based browsers
     // Kudos to Rui Marques: https://stackoverflow.com/a/27232658/7897049
     const e = document.createElement('canvas')
@@ -7,7 +7,7 @@ export function checkWebPSupport () {
     }
 
     // Check other common browsers by version
-    let m = navigator.userAgent.match(/(Edg|Firefox)\/(\d+)\./)
+    let m: any = navigator.userAgent.match(/(Edg|Firefox)\/(\d+)\./)
     if (m) {
         return (m[1] === 'Firefox' && m[2] >= 65) || (m[1] === 'Edge' && m[2] >= 18)
     }
