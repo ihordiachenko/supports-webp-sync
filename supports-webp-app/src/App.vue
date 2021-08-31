@@ -20,10 +20,12 @@
 
 <script setup>
 import {ref} from 'vue'
-import {checkWebPSupport} from '../..'
+import {checkWebPSupport} from '../../lib/index.esm'
 
 const isWebpSupportedSync = checkWebPSupport()
 const userAgent = navigator.userAgent
+
+console.log(userAgent)
 
 const isWebpSupported = ref(null)
 const onLoad = (success) => {
