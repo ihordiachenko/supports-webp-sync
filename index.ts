@@ -1,4 +1,8 @@
 export function  checkWebPSupport(): Boolean  {
+    if (typeof window === "undefined") { // SSE sanity check
+        return false
+    }
+
     // Use canvas hack for webkit-based browsers
     // Kudos to Rui Marques: https://stackoverflow.com/a/27232658/7897049
     const e = document.createElement('canvas')
