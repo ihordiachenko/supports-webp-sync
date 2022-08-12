@@ -18,7 +18,7 @@ export function  checkWebPSupport(): Boolean  {
         return (m[1] === 'Firefox' && m[2] >= 65) || (m[1] === 'Edge' && m[2] >= 18)
     }
 
-    m = navigator.userAgent.match(/OS X\s?\d*_?(?<os>\d+)?.+ Version\/(?<v>\d+\.\d+)/)
+    m = navigator.userAgent.match(/OS X\s?(?<os>\d+)?.+ Version\/(?<v>\d+\.\d+)/)
     if (m) {
         return m.groups.v >= 14 && (m.groups.os || 99) >= 11
     }
