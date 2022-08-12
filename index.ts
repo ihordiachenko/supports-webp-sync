@@ -20,7 +20,10 @@ export function  checkWebPSupport(): Boolean  {
 
     m = navigator.userAgent.match(/OS X\s?(?<os>\d+)?.+ Version\/(?<v>\d+\.\d+)/)
     if (m) {
-        return m.groups.v >= 14 && (m.groups.os || 99) >= 11
+        // Intl.ListFormat only works on Safari 14.1+ & MacOS 11+ - nearly the same specifications as WebP support.
+        // See https://caniuse.com/webp & https://caniuse.com/?search=Intl.ListFormat
+        const intl: any = window.Intl || {}
+        return m.groups.v >= 14 && ((m.groups.os || 99) >= 11 || intl.ListFormat != null)
     }
 
     return false
